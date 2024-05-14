@@ -8,6 +8,7 @@ config();
 const app = express();
 // middleware
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+// 3:17:50
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
 // This is only to be used in development; remove it in production.
