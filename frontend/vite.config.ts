@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   build: {
     rollupOptions: {
-      input: '/path/to/App.tsx'
+      input: '/path/to/main.tsx'
     }
   },
   plugins: [react()],
