@@ -100,7 +100,7 @@ const Chat = () => {
                 You are talking to a chatbot.
               </Typography>
               <Typography sx={{ mx: "auto", fontFamily: "work sans", my: 4, p: 3 }}>
-                Feel free to ask ask some questions relating to business, advice, mental health, and education. Please avoid sharing personal information.
+                This chatbot is using the OpenAI API. Feel free to ask ask some questions relating to business, advice, mental health, and education. Please avoid sharing personal information.
               </Typography>
               <Button 
                 onClick={handleDeletedChats}
@@ -158,21 +158,21 @@ const Chat = () => {
             ))}
 
           </Box>
-          <div style={{ width: "100%", padding: "20px", borderRadius: 8, backgroundColor: "rgb(17, 27, 39)", display: "flex", margin: "auto", }}>
+          <div style={{ width: "100%", borderRadius: 8, backgroundColor: "rgb(17, 27, 39)", display: "flex", margin: "auto", }}>
             <input 
                 ref={inputRef}
                 type="text" 
                 style={{ 
                   width: "100%", 
                   backgroundColor: "transparent", 
-                  padding: "10px", 
+                  padding: "30px", 
                   border: "none", 
                   outline: "none", 
                   color: "white", 
                   fontSize: "20px", 
                   }} 
               />
-              <IconButton onClick={handleSubmit} sx={{ ml: "auto", color: "white" }}>
+              <IconButton onClick={handleSubmit} sx={{  color: "white", mx: 1 }}>
                 <IoMdSend />
               </IconButton>
           </div>
